@@ -13,29 +13,16 @@
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
-    const root = document.getElementById("root");
     function App() {
-      const [conuter, setConuter] = React.useState(0);
-      console.log(conuter);
-      const onClickF = () => {
-        setConuter((current) => current + 1);
-      };
       return (
         <div>
-          <h3 id="title">Total Click : {conuter}</h3>
-          <button onClick={onClickF}>Click me</button>
+          <h1>Super Converter</h1>
+          <input placeholder="Minutes" type="number" />
+          <input placeholder="Hours" type="number" />
         </div>
       );
     }
-
-    // const Container = () => {
-    //
-    //   <div>
-    //     <h3 id="title">Total Click : 0</h3>
-    //     <button>Click me</button>
-    //   </div>
-    // };
-
+    const root = document.getElementById("root");
     ReactDOM.render(<App />, root);
   </script>
 </html>
