@@ -1,17 +1,24 @@
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const name = "React";
   return (
-    <>
-      {/* 주석은 이렇게 작성합니다. */}
-      <div
-        className="react" // 시작태그를 여러줄 작성
-      >
-        {name}
-      </div>
-      <input />
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
